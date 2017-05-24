@@ -11,5 +11,5 @@ app.get('/', function (req, res) {
   res.send('<h1>Hello world</h1>\nAnd a special hello to Simon!');
 });
 
-app.listen(PORT);
+app.listen(process.env.PORT || 8080);
 console.log('Running on http://localhost:' + PORT);
